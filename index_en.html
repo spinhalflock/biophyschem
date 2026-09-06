@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Biophysical Chemistry Laboratory</title>
+  <link rel="icon" type="image/jpeg" href="Gemini_Generated_Image_mbfq9zmbfq9zmbfq.jpg" />
 
   <style>
     * {
@@ -21,10 +22,47 @@
 
     header {
       position: relative;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      background: linear-gradient(125deg, #173765 0%, #2a5ea4 68%, #38a5bd 100%);
       color: white;
       padding: 80px 20px;
       text-align: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .lab-logo {
+      width: 138px;
+      height: 138px;
+      object-fit: cover;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+
+    .header-titles {
+      text-align: left;
+    }
+
+    .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .news-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid #e3e9f1;
+    }
+
+    .news-list li:last-child {
+      border-bottom: none;
     }
 
     /* Japanese Button */
@@ -226,6 +264,20 @@
         top: 15px;
         right: 15px;
       }
+
+      .header-content {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .header-titles {
+        text-align: center;
+      }
+
+      .lab-logo {
+        width: 112px;
+        height: 112px;
+      }
     }
   </style>
 </head>
@@ -240,14 +292,20 @@
       <a href="index.html">Japanese</a>
     </div>
 
-    <h1>Biophysical Chemistry Laboratory</h1>
-    <h2>生物物理化学研究室</h2>
+    <div class="header-content">
+      <img class="lab-logo" src="Gemini_Generated_Image_mbfq9zmbfq9zmbfq.jpg" alt="Biophysical Chemistry Laboratory logo">
+      <div class="header-titles">
+        <h1>Biophysical Chemistry Laboratory</h1>
+        <h2>生物物理化学研究室</h2>
+      </div>
+    </div>
 
   </header>
 
   <!-- Navigation -->
   <nav>
     <ul>
+      <li><a href="#news">News</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#members">Members</a></li>
       <li><a href="#photos">Photos</a></li>
@@ -255,6 +313,16 @@
       <li><a href="#links">Links</a></li>
     </ul>
   </nav>
+
+  <!-- News -->
+  <section id="news">
+    <div class="section-box">
+      <h3>News</h3>
+      <ul class="news-list">
+        <li>News and updates will be posted here.</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Research -->
   <section id="research">

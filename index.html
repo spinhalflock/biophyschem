@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Biophysical Chemistry Laboratory</title>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
 
   <style>
     * {
@@ -21,10 +22,45 @@
 
     header {
       position: relative;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      background: linear-gradient(125deg, #173765 0%, #2a5ea4 68%, #38a5bd 100%);
       color: white;
       padding: 80px 20px;
       text-align: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .lab-logo {
+      width: 75px;
+      height: 75px;
+      object-fit: contain;
+      background: transparent;
+    }
+
+    .header-titles {
+      text-align: left;
+    }
+
+    .news-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .news-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid #e3e9f1;
+    }
+
+    .news-list li:last-child {
+      border-bottom: none;
     }
 
     /* English Button */
@@ -202,6 +238,62 @@
       margin-bottom: 10px;
     }
 
+    .research-overview {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(380px, 1.1fr);
+      gap: 36px;
+      align-items: center;
+      margin-top: 18px;
+    }
+
+    .research-copy p {
+      margin-bottom: 18px;
+    }
+
+    .research-themes {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .research-themes a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 15px;
+      color: #1e3c72;
+      background: #f0f4fa;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .research-themes a::before {
+      content: "→";
+      color: #2a5298;
+      flex: 0 0 auto;
+    }
+
+    .research-themes a:hover {
+      background: #e3ebf7;
+      transform: translateX(4px);
+    }
+
+    .research-figure {
+      margin: 0;
+      min-width: 0;
+    }
+
+    .research-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
     .member-link {
       text-decoration: none;
       color: inherit;
@@ -237,6 +329,36 @@
         top: 15px;
         right: 15px;
       }
+
+      .header-content {
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .header-titles {
+        text-align: center;
+      }
+
+      .lab-logo {
+        width: 112px;
+        height: 112px;
+      }
+
+      .research-overview {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .research-figure {
+        max-width: 620px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-box {
+        padding: 28px 20px;
+      }
     }
   </style>
 </head>
@@ -251,13 +373,19 @@
       <a href="index_en.html">English</a>
     </div>
 
-    <h1>Biophysical Chemistry Laboratory</h1>
-    <h2>生物物理化学研究室</h2>
+    <div class="header-content">
+      <img class="lab-logo" src="images/logo4-2.png" alt="生物物理化学研究室ロゴ">
+      <div class="header-titles">
+        <h1>Biophysical Chemistry Laboratory</h1>
+        <h2>生物物理化学研究室</h2>
+      </div>
+    </div>
   </header>
 
   <!-- Navigation -->
   <nav>
     <ul>
+      <li><a href="#news">ニュース</a></li>
       <li><a href="#research">研究内容</a></li>
       <li><a href="#members">メンバー</a></li>
       <li><a href="#photos">写真</a></li>
@@ -266,39 +394,58 @@
     </ul>
   </nav>
 
-  <!-- Research -->
-  <section id="research">
+  <!-- News -->
+  <section id="news">
     <div class="section-box">
-      <h3>研究内容</h3>
-      <p>
-        生物物理化学研究室では，タンパク質などの生体高分子の構造・機能・相互作用を
-        物理化学的手法(主にNMRとX線小角散乱)によって解析し、生命現象の理解や創薬研究などへの応用を目指しています。
-      </p>
-
-      <br>
-
-      <p>主な研究テーマ：</p>
-
-      <ul style="margin-top:10px; padding-left:20px;">
-        <li>タンパク質立体構造解析</li>
-        <li>生体高分子のダイナミクス解析</li>
-        <li>NMR分光法における計測・解析法の開発</li>
-        <li>計算化学シミュレーション</li>
+      <h3>ニュース</h3>
+      <ul class="news-list">
+        <li> 2026/09/07 FixJに関連する論文がBBRCに掲載されました．</li>
+        <li> 2026/09/07 研究内容ページを公開しました．</li>
+        <li> 2026/06/01 生物物理化学研究室のホームページを公開しました．</li>
       </ul>
     </div>
   </section>
 
-  <!-- List of Members -->
+  <!-- Research -->
+  <section id="research">
+    <div class="section-box">
+      <h3><a href="research.html" target="_blank">研究内容</a></h3>
+      <div class="research-overview">
+        <div class="research-copy">
+          <p>
+            生物物理化学研究室では，タンパク質などの生体高分子の構造・機能・相互作用を
+            物理化学的手法（主にNMR, 計算化学，機械学習，X線小角散乱）によって解析し、生命現象の理解や創薬研究などへの応用を目指しています。
+          </p>
+
+          <p><strong>主な研究テーマ：</strong></p>
+
+          <ul class="research-themes">
+            <li><a href="research.html#structure">タンパク質立体構造・ダイナミクス解析</a></li>
+            <li><a href="research.html#interaction">生体分子間相互作用解析</a></li>
+            <li><a href="research.html#method">NMR分光法における計測・解析法の開発</a></li>
+            <li><a href="research.html#simulation">計算化学シミュレーション</a></li>
+          </ul>
+        </div>
+
+        <figure class="research-figure">
+          <img src="images/Fig1.jpg" alt="NMR装置、分子間相互作用、常磁性効果、タンパク質動的構造解析を示す研究概要図">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Members -->
   <section id="members">
     <div class="section-box">
       <h3>メンバー</h3>
 
       <div class="member-list">
         <div class="member-card">
-　　　　　<a href="https://osbc.fpark.tmu.ac.jp/Members/tikeya/index.html" target="_blank" class="member-link">
+　　　　　<a href="tikeya/index.html" target="_blank" class="member-link">
           <h4>Professor</h4>
           <p>池谷 鉄兵</p>
-　　　　　</a>
+          <p><a href="https://researchmap.jp/teppei-ikeya" target="_blank" class="member-link">researchmap</a></p>
+　　　　　</a>          
         </div>
         <div class="member-card">
 　　　　　<a href="" target="_blank" class="member-link">
@@ -388,7 +535,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Biochimical Physics Laboratory</p>
+    <p>© 2026 Biophysical Chemistry Laboratory</p>
   </footer>
 
 </body>

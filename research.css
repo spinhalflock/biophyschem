@@ -1,0 +1,104 @@
+:root {
+  --navy: #173765;
+  --blue: #2a5ea4;
+  --cyan: #38a5bd;
+  --green: #55a773;
+  --orange: #e29a47;
+  --ink: #243447;
+  --muted: #637083;
+  --paper: #ffffff;
+  --wash: #f4f7fb;
+  --line: #dce5f0;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--wash);
+  font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", Arial, sans-serif;
+  line-height: 1.85;
+}
+a { color: var(--blue); }
+.site-header {
+  color: white;
+  background: linear-gradient(125deg, #173765 0%, #2a5ea4 68%, #38a5bd 100%);
+  padding: 54px 24px 46px;
+}
+.header-inner, main { max-width: 1120px; margin: 0 auto; }
+.eyebrow { margin: 0 0 8px; letter-spacing: .12em; font-size: .82rem; opacity: .8; }
+h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.25; }
+.lead { max-width: 760px; margin: 18px 0 0; font-size: 1.06rem; opacity: .92; }
+.top-link { display: inline-block; margin-top: 22px; color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.7); }
+
+.topic-nav {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+.topic-nav ul {
+  max-width: 1120px; margin: 0 auto; padding: 12px 24px;
+  display: flex; gap: 12px 24px; flex-wrap: wrap; list-style: none;
+}
+.topic-nav a { color: var(--navy); text-decoration: none; font-weight: 700; font-size: .92rem; }
+
+main { padding: 42px 24px 80px; }
+.intro-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 28px; margin-bottom: 36px; }
+.intro-card, .research-section, .sub-card {
+  background: var(--paper); border: 1px solid var(--line); border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(30,60,105,.06);
+}
+.intro-card { padding: 30px; }
+.intro-card h2 { margin: 0 0 12px; color: var(--navy); font-size: 1.45rem; }
+.intro-card p { margin: 0; }
+.keyword-list { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
+.keyword-list span { background: #eaf1fa; color: var(--navy); padding: 5px 11px; border-radius: 999px; font-size: .85rem; }
+
+.research-section { margin: 30px 0; padding: clamp(24px, 4vw, 46px); scroll-margin-top: 86px; }
+.section-label { color: var(--cyan); font-weight: 800; letter-spacing: .09em; font-size: .78rem; }
+.research-section h2 { color: var(--navy); font-size: clamp(1.65rem, 3vw, 2.25rem); line-height: 1.35; margin: 4px 0 12px; }
+.section-lead { color: var(--muted); max-width: 1000px; margin: 0 0 28px; }
+.two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+.copy h3 { color: var(--navy); margin: 22px 0 6px; font-size: 1.18rem; }
+.copy h3:first-child { margin-top: 0; }
+.copy p { margin: 0 0 12px; }
+.figure { margin: 0; padding: 18px; border-radius: 14px; background: #f8fbff; border: 1px solid #e3ebf5; }
+.figure svg { display: block; width: 100%; height: auto; }
+.figure figcaption { color: var(--muted); font-size: .82rem; line-height: 1.55; margin-top: 10px; }
+.figure-placeholder { color: var(--muted); font-size: .78rem; margin-top: 8px; }
+
+.subsection-title { color: var(--navy); margin: 38px 0 16px; padding-top: 28px; border-top: 1px solid var(--line); }
+.card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.sub-card { padding: 20px; box-shadow: none; }
+.sub-card h3 { margin: 0 0 8px; color: var(--navy); font-size: 1.05rem; }
+.sub-card p { margin: 0; font-size: .92rem; color: var(--muted); }
+.outcome { margin-top: 28px; padding: 18px 20px; border-left: 5px solid var(--cyan); background: #edf7fa; border-radius: 0 12px 12px 0; }
+.outcome strong { color: var(--navy); }
+.edit-note { margin-top: 38px; padding: 20px; border: 1px dashed #9eb2ca; border-radius: 12px; color: var(--muted); background: #fbfdff; font-size: .9rem; }
+footer { background: var(--navy); color: white; text-align: center; padding: 28px 20px; }
+
+@media (max-width: 800px) {
+  .intro-grid, .two-column, .card-grid { grid-template-columns: 1fr; }
+  .topic-nav { position: static; }
+  .topic-nav ul { display: grid; grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .topic-nav ul { grid-template-columns: 1fr; }
+  .site-header { padding-top: 40px; }
+  main { padding-left: 14px; padding-right: 14px; }
+}
+
+.figure-fixed {
+  width: 100%;
+}
+
+.research-image {
+  display: block;
+  width: 100%;
+  height: 390px;      /* 表示したい高さ */
+  object-fit: contain;
+  object-position: center;
+  background: white;
+  border-radius: 10px;
+}
