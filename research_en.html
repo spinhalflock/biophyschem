@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research at the Biophysical Chemistry Laboratory: We use NMR spectroscopy and computational science to investigate biomolecular structures, dynamics, and interactions.">
+  <title>Research | Biophysical Chemistry Laboratory</title>
+  <link rel="stylesheet" href="research.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">BIOPHYSICAL CHEMISTRY LABORATORY</p>
+      <h1>Research</h1>
+      <p class="lead">Biomolecules do not function as single, static structures. They constantly fluctuate, encounter binding partners, and shift between states. By combining NMR spectroscopy with computational science, we aim to reveal these dynamic molecular pictures.</p>
+      <a class="top-link" href="index_en.html">← Back to the laboratory home page</a>
+    </div>
+  </header>
+
+  <nav class="topic-nav" aria-label="Research topics">
+    <ul>
+      <li><a href="#structure">Structure and Dynamics</a></li>
+      <li><a href="#interaction">Molecular Interactions</a></li>
+      <li><a href="#method">NMR Methods</a></li>
+      <li><a href="#simulation">Computational Chemistry</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="intro-grid">
+      <div class="intro-card">
+        <h2>Understanding function through motion as well as structure</h2>
+        <p>We integrate structural analysis, interaction analysis, method development, and molecular simulations to study biomolecular conformational ensembles and dynamics that cannot be captured by experiment or computation alone.</p>
+        <div class="keyword-list"><span>Solution NMR</span><span>IDP</span><span>LLPS</span><span>multi-state</span><span>in-cell NMR</span><span>Machine Learning</span><span>MD simulation</span></div>
+      </div>
+      <figure class="figure">
+        <svg viewBox="0 0 430 250" role="img" aria-label="Integrated research approach">
+          <defs><marker id="arr0" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7992af"/></marker></defs>
+          <circle cx="215" cy="125" r="54" fill="#173765"/><text x="215" y="116" fill="white" text-anchor="middle" font-size="18" font-weight="bold">Molecular Function</text><text x="215" y="141" fill="white" text-anchor="middle" font-size="14">Dynamic View</text>
+          <g font-size="14" font-weight="bold" text-anchor="middle"><rect x="18" y="25" width="120" height="45" rx="12" fill="#dceafa"/><text x="78" y="53" fill="#173765">NMR Measurement</text><rect x="292" y="25" width="120" height="45" rx="12" fill="#dff3ed"/><text x="352" y="53" fill="#245b49">Structure &amp; Dynamics</text><rect x="18" y="180" width="120" height="45" rx="12" fill="#fff0dc"/><text x="78" y="208" fill="#7c4a13">Interactions</text><rect x="292" y="180" width="120" height="45" rx="12" fill="#e8e2f6"/><text x="352" y="208" fill="#513d7b">Computational Science</text></g>
+          <g stroke="#7992af" stroke-width="2" fill="none" marker-end="url(#arr0)"><path d="M137 57 Q185 55 186 78"/><path d="M292 57 Q245 55 244 78"/><path d="M137 194 Q180 190 188 170"/><path d="M292 194 Q248 190 242 170"/></g>
+        </svg>
+        <figcaption>By integrating experiments and computation, we visualize structures, motions, and interactions to understand the diverse functions of biomolecules.</figcaption>
+      </figure>
+    </div>
+
+    <section id="structure" class="research-section">
+      <span class="section-label">RESEARCH 01</span>
+      <h2>Protein Structure and Dynamics</h2>
+      <p class="section-lead">We study signaling and enzyme proteins, with particular emphasis on multidomain proteins and proteins containing intrinsically disordered regions, to understand molecular function from their conformational ensembles and time-dependent changes.</p>
+      <h3>The Intracellular MAPK Signaling Pathway</h3>
+      <div class="two-column">
+        <div class="copy">
+          <h3>Intracellular Signaling</h3>
+          <p>Extracellular stimuli are transmitted into the cell when ligands such as hormones or growth factors bind to receptors on the cell membrane. Ligand binding induces phosphorylation of the intracellular region of the receptor, which sequentially activates various signaling proteins. The transmitted information ultimately reaches transcription factors in the nucleus and alters gene expression, thereby regulating processes such as cell proliferation and differentiation.</p>
+          <h3>MAPK Signaling</h3>
+          <p>Among the many intracellular signaling pathways, our laboratory focuses on <strong>proteins involved in the RAS–MAPK pathway, which is crucial for cell proliferation and differentiation</strong>. In this pathway, binding of a growth factor to the membrane receptor EGFR transmits information to intracellular proteins.</p>
+        </div>
+        <figure class="figure figure-fixed">
+          <img
+            src="images/MAPK.jpg"
+            alt="Schematic overview of the intracellular signaling network centered on RAS."
+            class="research-image"
+          >
+          <figcaption>
+            Schematic overview of the intracellular signaling network centered on RAS.
+          </figcaption>
+        </figure>
+        <div class="copy">
+          <p>First, GRB2 recognizes EGFR and recruits SOS1 to the vicinity of the cell membrane. SOS1 binds to RAS and promotes GDP–GTP exchange, thereby activating RAS. Activated RAS triggers the RAF–MEK–ERK MAPK cascade and regulates the expression of genes involved in cell proliferation and differentiation. RAS also binds to multiple effectors, including RGL2, and participates in signaling pathways beyond the MAPK cascade.</p>
+          <h3>Target Proteins</h3>
+          <p>We investigate GRB2, SOS1, RAS, RAF, RGL2, and related molecules to determine how their domains and intrinsically disordered regions interact and cooperate to transmit information. By focusing on their three-dimensional structures and dynamics, we aim to elucidate the molecular mechanisms that regulate signal transduction.</p>
+        </div>
+        
+        <figure class="figure figure-fixed">
+          <img
+            src="images/structures.jpg"
+            alt="Three-dimensional structures of GRB2, SOS1, RAS, RAF1, and RGL2."
+            class="research-image"
+          >
+          <figcaption>
+            Three-dimensional structures of GRB2, SOS1, RAS, RAF1, and RGL2.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="outcome"><strong>Our goal:</strong> To understand intracellular signaling in terms of three-dimensional structure and molecular motion, helping to clarify mechanisms of cancer development and identify potential therapeutic targets.</div>
+
+      <h3 class="subsection-title">Multistate Structures of Ubiquitin Hydrolases</h3>
+      <div class="two-column">
+        <figure class="figure figure-fixed">
+          <img
+            src="images/DUB.jpg"
+            alt="Conceptual diagram of ubiquitination and deubiquitination"
+            class="research-image"
+          >
+        
+          <figcaption>
+            Conceptual diagram of ubiquitination and deubiquitination．
+          </figcaption>
+        </figure>
+
+        <div class="copy">
+          <h3>The Ubiquitin–Proteasome System and Deubiquitinating Enzymes</h3>
+          <p>Cells must properly degrade proteins that have completed their roles or acquired abnormal structures and replace them with newly synthesized proteins. A major system responsible for this protein quality control is the <strong>ubiquitin–proteasome system</strong>. Proteins destined for degradation are tagged with the small protein ubiquitin and transported to the proteasome for degradation. This system regulates many biological processes, including the cell cycle, signal transduction, and DNA repair.</p>
+          <p>Ubiquitin attached to proteins can be cleaved by <strong>deubiquitinating enzymes (DUBs)</strong>. By removing or editing ubiquitin chains, DUBs may protect target proteins from degradation or, conversely, promote their degradation. They also regenerate ubiquitin for reuse. The balance between ubiquitin attachment and removal precisely regulates protein abundance and function within the cell.</p>
+        </div>
+        <figure class="figure figure-fixed">
+          <img
+            src="images/YUH1p1.jpg"
+            alt="Multistate structure of YUH1"
+            class="research-image"
+          >
+        
+          <figcaption>
+            Multistate structure of YUH1.
+          </figcaption>
+        </figure>
+        <div class="copy">
+          <p>We study <strong>UCHL1, UCHL3, and UCHL5</strong>, members of the DUB family. UCHL1 is abundant in neurons and contributes to ubiquitin homeostasis and intracellular protein quality control. UCHL3 recognizes ubiquitin and ubiquitin-like proteins and cleaves molecules attached to their C termini. UCHL5 binds to the 19S regulatory particle of the proteasome and regulates proteasomal degradation by cleaving or editing ubiquitin chains attached to target proteins. UCHL5 has also been reported to remove branch points from ubiquitin chains on the proteasome and thereby facilitate substrate degradation.</p>
+          <p>We analyze how these DUBs recognize and cleave ubiquitin from both structural and dynamic perspectives. In particular, we focus on <strong>multistate structures</strong>, in which an enzyme interconverts among multiple conformational states rather than adopting a single structure. Using solution NMR, we investigate structural and dynamic changes around the active site upon ubiquitin binding to understand the molecular mechanisms of substrate recognition and catalysis by DUBs.</p>
+        </div>
+      </div>
+      <div class="outcome"><strong>Our goal:</strong> To uncover molecular mechanisms shared by deubiquitination processes within the ubiquitin–proteasome system and help identify therapeutic targets for diseases such as Alzheimer’s disease.</div>
+
+      <h3 class="subsection-title">Liquid–Liquid Phase Separation (LLPS)</h3>
+      <div class="two-column">
+        <div class="copy">
+          <h3>GRB2–SOS1 and Liquid–Liquid Phase Separation</h3>
+          <p>In addition to membrane-bound organelles such as the nucleus and mitochondria, cells contain membraneless organelles formed through the assembly of specific proteins and nucleic acids. Liquid–liquid phase separation (LLPS) is one mechanism underlying their formation. By locally concentrating selected molecules through LLPS, cells are thought to dynamically regulate where and how rapidly biochemical reactions occur.</p>
+          <p>GRB2 contains two SH3 domains that bind to multiple proline-rich motifs within the intrinsically disordered region of SOS1. Assembly of many molecules through such multivalent interactions may produce biomolecular condensates containing GRB2 and SOS1. We analyze GRB2–SOS1 interactions and structural dynamics to determine how condensate formation locally activates RAS and regulates the strength and duration of intracellular signaling.</p>
+        </div>
+
+        <figure class="figure figure-fixed">
+          <img
+            src="images/LLPS.jpg"
+            alt="Conceptual diagram of LLPS"
+            class="research-image"
+          >
+        
+          <figcaption>
+            Schematic illustration of LLPS.
+          </figcaption>
+        </figure>
+
+      </div>
+      <div class="outcome"><strong>Our goal:</strong> To elucidate the molecular mechanisms underlying liquid–liquid phase separation.</div>
+
+      <h3 class="subsection-title">Dynamics of Flexible Proteins: Multidomain and Intrinsically Disordered Proteins</h3>
+      <div class="two-column">
+        <figure class="figure figure-fixed">
+          <img
+            src="images/IDP.jpg"
+            alt="Schematic illustration of multidomain and intrinsically disordered proteins"
+            class="research-image"
+          >
+        
+          <figcaption>
+            Schematic illustration of multidomain and intrinsically disordered proteins．
+          </figcaption>
+        </figure>
+
+        <div class="copy">
+          <h3>Structure and Dynamics of Flexible Proteins</h3>
+          <p>Some proteins are multidomain proteins in which multiple structural units, or domains, are connected by flexible linkers. Although each domain has a relatively stable three-dimensional structure, the relative positions and orientations of the domains continually change. These motions enable simultaneous recognition of multiple molecules and transmission of information between distant binding sites.</p>
+          <p>In contrast, intrinsically disordered proteins and regions do not adopt a single well-defined structure in isolation but rapidly interconvert among many conformations. This flexibility enables them to bind diverse partners and sometimes to form specific structures upon binding. They also play important roles in LLPS through multivalent interactions. Using NMR, we analyze the conformational ensembles and motions of multidomain and intrinsically disordered proteins to reveal how their flexibility is exploited in molecular recognition and intracellular signaling.</p>
+        </div>
+      </div>
+      <div class="outcome"><strong>Our goal:</strong> To visualize the conformational distributions of flexible proteins and clarify their relationships to function.</div>
+
+
+
+    </section>
+
+    <section id="interaction" class="research-section">
+      <span class="section-label">RESEARCH 02</span>
+      <h2>Biomolecular Interaction Analysis</h2>
+      <p class="section-lead">Beyond simply determining whether molecules bind, we quantify which residues participate in recognition, how strongly they contribute, and on what timescales they act.</p>
+      <div class="two-column">
+        <div class="copy">
+          <h3>Molecular Recognition in GRB2–SOS1 and SOS1–RAS</h3>
+          <p>NMR titration experiments allow us to track changes in the position and intensity of individual signals as a target molecule is added. For GRB2–SOS1 and SOS1–RAS, we characterize binding interfaces, binding-induced structural changes, and interdomain cooperativity at residue-level resolution.</p>
+          <h3>residue-specific K<sub>D</sub></h3>
+          <p>We fit titration curves for individual residues to estimate apparent dissociation constants, K<sub>D</sub>. When values differ among residues, we consider deviations from simple 1:1 binding, local conformational changes, exchange processes, and multiple binding modes. Global and residue-specific analyses are combined, and numerical uncertainties are evaluated.</p>
+        </div>
+        <figure class="figure figure-fixed">
+          <img
+            src="images/titration.jpg"
+            alt="Determination of molecular interactions and binding affinity by NMR"
+            class="research-image"
+          >
+        
+          <figcaption>
+            Determination of molecular interactions and binding affinity by NMR．
+          </figcaption>
+        </figure>
+      </div>
+      <div class="outcome"><strong>Our goal:</strong> To quantify molecular recognition in a site-specific manner and reveal how interactions regulate signal transduction.</div>
+    </section>
+
+    <section id="method" class="research-section">
+      <span class="section-label">RESEARCH 03</span>
+      <h2>Development of NMR Measurement and Analysis Methods</h2>
+      <p class="section-lead">We develop technologies that capture structural states and intracellular environments inaccessible to conventional methods while extracting the maximum information from limited measurement time.</p>
+      <div class="card-grid">
+        <article class="sub-card"><h3>Multistate Structure Calculation</h3><p>We develop computational methods that integrate experimental information such as NOEs, chemical shifts, and relaxation data to determine structures as multiconformational ensembles rather than as a single average structure.</p></article>
+        <article class="sub-card"><h3>In-cell NMR Methods</h3><p>We develop sample-preparation and measurement methods for studying protein structure, motion, and interactions in living cells or in crowded environments that mimic the cellular interior.</p></article>
+        <article class="sub-card"><h3>Machine-learning-based Signal Reconstruction</h3><p>We reconstruct high-quality multidimensional spectra from limited NMR data acquired using sparse sampling and related approaches, aiming to accelerate measurements and improve sensitivity.</p></article>
+      </div>
+      <figure class="figure" style="margin-top:24px">
+        <svg viewBox="0 0 900 245" role="img" aria-label="Workflow for developing NMR measurement and analysis methods">
+          <defs><marker id="arr3" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#7992af"/></marker></defs>
+          <g text-anchor="middle"><rect x="25" y="47" width="185" height="124" rx="16" fill="#dceafa"/><text x="117" y="92" fill="#173765" font-size="17" font-weight="bold">NMR Measurement</text><text x="117" y="121" fill="#637083" font-size="13">Multidimensional / in-cell</text><text x="117" y="144" fill="#637083" font-size="13">Nonuniform sampling</text><rect x="268" y="47" width="185" height="124" rx="16" fill="#dff3ed"/><text x="360" y="92" fill="#245b49" font-size="17" font-weight="bold">Signal reconstruction</text><text x="360" y="121" fill="#637083" font-size="13">Machine learning</text><text x="360" y="144" fill="#637083" font-size="13">Denoising / high resolution</text><rect x="511" y="47" width="185" height="124" rx="16" fill="#fff0dc"/><text x="603" y="92" fill="#7c4a13" font-size="17" font-weight="bold">Information extraction</text><text x="603" y="121" fill="#637083" font-size="13">Distance / exchange / relaxation</text><text x="603" y="144" fill="#637083" font-size="13">Population / rates</text><rect x="754" y="47" width="122" height="124" rx="16" fill="#e8e2f6"/><text x="815" y="91" fill="#513d7b" font-size="17" font-weight="bold">multi-state</text><text x="815" y="121" fill="#637083" font-size="13">Conformational ensemble</text><text x="815" y="144" fill="#637083" font-size="13">Dynamic model</text></g>
+          <g stroke="#7992af" stroke-width="3" marker-end="url(#arr3)"><line x1="218" y1="109" x2="258" y2="109"/><line x1="461" y1="109" x2="501" y2="109"/><line x1="704" y1="109" x2="744" y2="109"/></g>
+          <text x="450" y="218" text-anchor="middle" fill="#637083" font-size="14">Integrated design of new measurements and analysis algorithms</text>
+        </svg>
+        <figcaption>Method development linking measurement, signal reconstruction, extraction of physical parameters, and multistate structure determination.</figcaption>
+      </figure>
+      <div class="outcome"><strong>Our goal:</strong> To realize faster NMR measurements capable of observing more complex structural dynamics under more physiologically relevant conditions.</div>
+    </section>
+
+    <section id="simulation" class="research-section">
+      <span class="section-label">RESEARCH 04</span>
+      <h2>Computational Chemistry Simulations</h2>
+      <p class="section-lead">We compare molecular motions derived from NMR relaxation analysis with molecular dynamics (MD) simulations to investigate the atomic-level motions underlying experimentally observed ensemble averages.</p>
+      <div class="two-column">
+        <figure class="figure">
+          <svg viewBox="0 0 520 315" role="img" aria-label="MD simulations of proteins and tRNA">
+            <path d="M100 180 C65 115 125 58 180 94 C224 45 300 82 284 142 C329 169 302 232 246 218 C206 265 133 242 143 204 C122 207 108 195 100 180Z" fill="#dceafa" stroke="#2a5ea4" stroke-width="3"/><path d="M346 55 Q415 93 366 142 Q333 176 388 211 Q430 236 468 184" fill="none" stroke="#e29a47" stroke-width="10" stroke-linecap="round"/><g fill="#38a5bd"><circle cx="130" cy="130" r="6"/><circle cx="174" cy="104" r="6"/><circle cx="230" cy="135" r="6"/><circle cx="189" cy="185" r="6"/><circle cx="250" cy="190" r="6"/></g><g fill="#e15252"><circle cx="369" cy="73" r="5"/><circle cx="391" cy="115" r="5"/><circle cx="358" cy="157" r="5"/><circle cx="393" cy="215" r="5"/><circle cx="454" cy="194" r="5"/></g><text x="192" y="284" text-anchor="middle" fill="#173765" font-size="16" font-weight="bold">Protein</text><text x="405" y="284" text-anchor="middle" fill="#7c4a13" font-size="16" font-weight="bold">tRNA</text><path d="M45 35 C160 12 340 15 475 40" fill="none" stroke="#7992af" stroke-width="2" stroke-dasharray="5 7"/><text x="260" y="23" text-anchor="middle" fill="#637083" font-size="13">Time evolution of atomic coordinates</text>
+          </svg>
+          <figcaption>Under construction</figcaption>
+          <div class="figure-placeholder">Under construction</div>
+        </figure>
+        <div class="copy">
+          <h3>Protein Structural Ensembles</h3>
+          <p>For GRB2, SOS1, RAS, YUH1, and UCHL-family proteins, we analyze domain motions, IDP conformational ensembles, and exchange near active sites. We validate and reweight simulation-derived ensembles against NMR data to construct molecular pictures consistent with experiment.</p>
+          <h3>tRNA Structure and Dynamics</h3>
+          <p>We investigate how the global structure of tRNA, local base pairing, and interactions with ions and water molecules affect molecular recognition and function. MD simulations allow us to visualize short-lived structures and local motions that are difficult to observe directly by experiment.</p>
+        </div>
+      </div>
+      <div class="outcome"><strong>Our goal:</strong> To connect experimental observables with atomic motions and describe biomolecular function as a time-dependent process.</div>
+    </section>
+
+    
+    <aside class="edit-note"><strong>Last updated: 2026/09/07</strong> &nbsp;&nbsp; Revision: Teppei Ikeya</aside>
+    
+  </main>
+
+  <footer><p>© 2026 Biophysical Chemistry Laboratory</p></footer>
+</body>
+</html>

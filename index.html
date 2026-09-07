@@ -55,12 +55,40 @@
     }
 
     .news-list li {
-      padding: 14px 0;
+      display: grid;
+      grid-template-columns: 7.5em minmax(0, 1fr);
+      gap: 2px;  /* 日付と本文の間隔 */
+      padding: 14px 0;  /* リストアイテムの上下の余白 */
       border-bottom: 1px solid #e3e9f1;
+    }
+
+    .news-date {
+      color: #637083;
+      font-weight: bold;
     }
 
     .news-list li:last-child {
       border-bottom: none;
+    }
+
+    .news-archive-link {
+      margin-top: 18px;
+      text-align: right;
+    }
+
+    .news-archive-link a {
+      color: #1e3c72;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .news-archive-link a::after {
+      content: " →";
+    }
+
+    .news-archive-link a:hover {
+      color: #2a5298;
+      text-decoration: underline;
     }
 
     /* English Button */
@@ -238,6 +266,22 @@
       margin-bottom: 10px;
     }
 
+    .access-map {
+      width: 100%;
+      height: 380px;
+      margin-top: 28px;
+      overflow: hidden;
+      border: 1px solid #dce5f0;
+      border-radius: 12px;
+    }
+
+    .access-map iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     .research-overview {
       display: grid;
       grid-template-columns: minmax(0, 0.9fr) minmax(380px, 1.1fr);
@@ -353,6 +397,10 @@
         max-width: 620px;
         margin: 0 auto;
       }
+
+      .access-map {
+        height: 300px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -387,6 +435,7 @@
     <ul>
       <li><a href="#news">ニュース</a></li>
       <li><a href="#research">研究内容</a></li>
+      <li><a href="#achievements">研究業績</a></li>
       <li><a href="#members">メンバー</a></li>
       <li><a href="#photos">写真</a></li>
       <li><a href="#access">Access</a></li>
@@ -399,10 +448,24 @@
     <div class="section-box">
       <h3>ニュース</h3>
       <ul class="news-list">
-        <li> 2026/09/07 FixJに関連する論文がBBRCに掲載されました．</li>
-        <li> 2026/09/07 研究内容ページを公開しました．</li>
-        <li> 2026/06/01 生物物理化学研究室のホームページを公開しました．</li>
+        <li> 
+          <time class="news-date" datetime="2026-09-06">2026/09/06</time>
+          <span>FixJに関連する論文がBBRCに掲載されました．</span>
+        </li>
+        <li> 
+          <time class="news-date" datetime="2026-09-06">2026/09/06</time>
+          <span>研究内容ページを公開しました．</span>
+        </li>
+        <li> 
+          <time class="news-date" datetime="2026-05-20">2026/05/20</time>
+          <span>生物物理化学研究室のホームページ(本サイト)を公開しました．</span>
+        </li>
+        <li> 
+          <time class="news-date" datetime="2026-04-01">2026/04/01</time>
+          <span>池谷鉄兵が千葉工業大学先進工学部生命科学科に教授として着任いたしました．至らぬ点も多々あるかと思いますが，色々ご指導いただけますと幸いです．どうぞよろしくお願いいたします．m(_ _)m</span>
+        </li>
       </ul>
+      <p class="news-archive-link"><a href="news.html">過去のニュースを見る</a></p>
     </div>
   </section>
 
@@ -431,6 +494,23 @@
           <img src="images/Fig1.jpg" alt="NMR装置、分子間相互作用、常磁性効果、タンパク質動的構造解析を示す研究概要図">
         </figure>
       </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <div class="section-box">
+      <h3><a href="publications.html">研究業績</a></h3>
+      <p>
+        生物物理化学研究室に関連する学術論文，書籍，招待講演などの研究業績を紹介します．
+        各項目をクリックすると，研究業績ページの該当する一覧へ移動します．
+      </p>
+
+      <ul class="research-themes" style="margin-top: 20px;">
+        <li><a href="publications.html#papers">学術論文</a></li>
+        <li><a href="publications.html#books">書籍</a></li>
+        <li><a href="publications.html#invited-talks">招待講演</a></li>
+      </ul>
     </div>
   </section>
 
@@ -516,6 +596,16 @@
         TEL: 047-478-0236<br>
         E-mail: ikeya.teppei ＠ chibatech.ac.jp
       </p>
+
+      <div class="access-map">
+        <iframe
+          src="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E5%B7%A5%E6%A5%AD%E5%A4%A7%E5%AD%A6%20%E6%B4%A5%E7%94%B0%E6%B2%BC%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9&amp;output=embed"
+          title="千葉工業大学 津田沼キャンパスの地図"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
   </section>
 

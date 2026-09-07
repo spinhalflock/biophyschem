@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Biophysical Chemistry Laboratory</title>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.75;
+      color: #333;
+      background: #f7f9fc;
+    }
+    header {
+      padding: 58px 20px;
+      color: #fff;
+      background: linear-gradient(125deg, #173765 0%, #2a5ea4 68%, #38a5bd 100%);
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .lab-logo { width: 75px; height: 75px; object-fit: contain; }
+    h1 { font-size: 2.35rem; line-height: 1.25; }
+    .subtitle { margin-top: 6px; font-size: 1.15rem; opacity: .9; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 15px 20px;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+    nav a {
+      margin: 0 16px;
+      color: #1e3c72;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover { color: #2a5298; }
+    main { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+    .section-box {
+      padding: 40px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.06);
+    }
+    h2 {
+      margin-bottom: 30px;
+      padding-left: 15px;
+      border-left: 6px solid #2a5298;
+      color: #1e3c72;
+      font-size: 2rem;
+    }
+    .news-year {
+      margin: 34px 0 10px;
+      padding-bottom: 7px;
+      border-bottom: 2px solid #dce5f0;
+      color: #1e3c72;
+      font-size: 1.4rem;
+    }
+    .news-list { list-style: none; }
+    .news-list li {
+      display: grid;
+      grid-template-columns: 7.5em minmax(0, 1fr);
+      gap: 18px;
+      padding: 16px 0;
+      border-bottom: 1px solid #e3e9f1;
+    }
+    .news-date { color: #637083; font-weight: bold; }
+    footer {
+      margin-top: 60px;
+      padding: 30px 20px;
+      color: #fff;
+      text-align: center;
+      background: #1e3c72;
+    }
+    @media (max-width: 600px) {
+      .header-content { flex-direction: column; text-align: center; }
+      h1 { font-size: 1.8rem; }
+      .section-box { padding: 28px 20px; }
+      nav a { display: inline-block; margin: 4px 9px; }
+      .news-list li { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img class="lab-logo" src="images/logo4-2.png" alt="Biophysical Chemistry Laboratory logo">
+      <div>
+        <h1>News</h1>
+        <p class="subtitle">News &amp; Updates</p>
+      </div>
+    </div>
+  </header>
+
+  <nav aria-label="Page navigation">
+    <a href="index_en.html">Home</a>
+    <a href="news_en.html">News</a>
+    <a href="research_en.html">Research</a>
+    <a href="publications_en.html">Publications</a>
+  </nav>
+
+  <main>
+    <section class="section-box">
+      <h2>All News</h2>
+
+      <h3 class="news-year">2026</h3>
+      <ul class="news-list">
+        <li><time class="news-date" datetime="2026-09-07">2026/09/07</time><span>Our paper on FixJ was published in <em>Biochemical and Biophysical Research Communications</em>.</span></li>
+        <li><time class="news-date" datetime="2026-09-07">2026/09/07</time><span>Our research page is now available.</span></li>
+        <li><time class="news-date" datetime="2026-06-01">2026/06/01</time><span>The website of the Biophysical Chemistry Laboratory was launched.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Biophysical Chemistry Laboratory</p></footer>
+</body>
+</html>
+
