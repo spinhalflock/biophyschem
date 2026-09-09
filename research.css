@@ -29,7 +29,7 @@ a { color: var(--blue); }
 .header-inner, main { max-width: 1120px; margin: 0 auto; }
 .eyebrow { margin: 0 0 8px; letter-spacing: .12em; font-size: .82rem; opacity: .8; }
 h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.25; }
-.lead { max-width: 760px; margin: 18px 0 0; font-size: 1.06rem; opacity: .92; }
+.lead { max-width: 1060px; margin: 18px 0 0; font-size: 1.06rem; opacity: .92; }
 .top-link { display: inline-block; margin-top: 22px; color: white; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.7); }
 
 .topic-nav {
@@ -62,7 +62,7 @@ main { padding: 42px 24px 80px; }
 .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
 .copy h3 { color: var(--navy); margin: 22px 0 6px; font-size: 1.18rem; }
 .copy h3:first-child { margin-top: 0; }
-.copy p { margin: 0 0 12px; }
+.copy p { margin: 0 0 5px; }
 .figure { margin: 0; padding: 18px; border-radius: 14px; background: #f8fbff; border: 1px solid #e3ebf5; }
 .figure svg { display: block; width: 100%; height: auto; }
 .figure figcaption { color: var(--muted); font-size: .82rem; line-height: 1.55; margin-top: 10px; }
