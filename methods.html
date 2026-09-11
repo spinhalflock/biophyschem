@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="生物物理化学研究室の研究内容：NMRと計算科学を用いて，生体分子の構造・揺らぎ・相互作用を研究しています．">
+  <title>解析手法 | 生物物理化学研究室</title>
+  <link rel="icon" href="images/logo.jpg" type="image/jpg">
+  <link rel="stylesheet" href="research.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">BIOPHYSICAL CHEMISTRY LABORATORY</p>
+      <h1>解析手法</h1>
+      <p class="lead">生体高分子(タンパク質，DNA・RNAなど)は，大変小さく，動きもとても速いので，それらの形や揺らぎ・運動を正確に観察するためには特別な装置や解析法が必要です．
+      </p>
+      <a class="top-link" href="index.html">← 研究室トップへ戻る</a>
+    </div>
+  </header>
+
+  <nav class="topic-nav" aria-label="解析手法">
+    <ul>
+      <li><a href="#nmr">核磁気共鳴(NMR)分光法</a></li>
+      <li><a href="#saxs">X線小角散乱(SAXS)法</a></li>
+      <li><a href="#md">分子動力学(MD)計算</a></li>
+      <li><a href="#mldl">機械学習(ML)・深層学習(DL)</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="intro-grid">
+      <div class="intro-card">
+        <h2>物理化学的方法で生体分子の「形」と「動き」を<strong>見る</strong></h2>
+        <p>私たちは，強磁場(磁石)，X線，分子シミュレーション，機械学習を使って生体分子の構造解析に応用しています．ここでは，それらの手法の簡単な概念と私たち研究室での活用法についてご紹介します．</p>
+        <div class="keyword-list"><span>溶液NMR</span><span>In-cell NMR</span><span>SAXS</span><span>MD simulation</span><span>人工知能(AI, ML)</span></div>
+      </div>
+      <figure class="figure">
+        <svg viewBox="0 0 430 250" role="img" aria-label="研究アプローチの循環">
+          <defs><marker id="arr0" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7992af"/></marker></defs>
+          <circle cx="215" cy="125" r="54" fill="#173765"/><text x="215" y="116" fill="white" text-anchor="middle" font-size="18" font-weight="bold">分子機能</text><text x="215" y="141" fill="white" text-anchor="middle" font-size="14">動的な理解</text>
+          <g font-size="14" font-weight="bold" text-anchor="middle"><rect x="18" y="25" width="120" height="45" rx="12" fill="#dceafa"/><text x="78" y="53" fill="#173765">NMR計測</text><rect x="292" y="25" width="120" height="45" rx="12" fill="#dff3ed"/><text x="352" y="53" fill="#245b49">構造・揺らぎ</text><rect x="18" y="180" width="120" height="45" rx="12" fill="#fff0dc"/><text x="78" y="208" fill="#7c4a13">相互作用</text><rect x="292" y="180" width="120" height="45" rx="12" fill="#e8e2f6"/><text x="352" y="208" fill="#513d7b">計算科学</text></g>
+          <g stroke="#7992af" stroke-width="2" fill="none" marker-end="url(#arr0)"><path d="M137 57 Q185 55 186 78"/><path d="M292 57 Q245 55 244 78"/><path d="M137 194 Q180 190 188 170"/><path d="M292 194 Q248 190 242 170"/></g>
+        </svg>
+        <figcaption>計測と計算を統合し，構造・運動・相互作用を可視化して，生体分子の多様な機能を理解します．</figcaption>
+      </figure>
+    </div>
+
+    <section id="nmr" class="research-section">
+      <span class="section-label">METHOD 01</span>
+      <h2>Nuclear Magnetic Resonance (NMR) Spectroscopy</h2>
+      <p class="section-lead"><h3>NMR法の基本概念</h3></p>
+      <div class="two-column">
+        <div class="copy">
+          <!--<h3>NMR</h3>-->
+          <p>核磁気共鳴分光法(<strong>NMR, Nuclear Magnetic Resonance</strong>)は，生体分子の構造・動き・相互作用を原子分解能で観察するための手法です．生体分子は，水素(<sup>1</sup>H)，炭素(<sup>13</sup>C)，窒素(<sup>15</sup>N)，リン(<sup>31</sup>P)などの原子でできていますが，これらの原子は，実はわずかに磁石の性質を持っています．一方，NMR装置は，巨大な電磁石なので電気を流すこと(超伝導)で，内部に強い磁場が発生させることができます．この強力な磁石の中に分子を置くと，分子中の原子はS極とN極を持った棒磁石のような振る舞いをします．分子中の各原子のこの磁気的振る舞いを観察することで，分子全体の構造・動き・分子間の相互作用を原子分解能で観察することができるのです．<strong>MRI(Magnetic Resonance Imaging)</strong>という体の断面図を撮影できる医療用装置は一般にも有名ですが，MRIとNMRの２つがよく似た名前であることから想像できるように，この2つの装置は全く同じ原理で動作しています．MRIは水分子を観察してその分布の画像を作っていますが，NMRでは有機分子や生体分子を観察して，その中の原子の位置や動きの情報を含む計測データを取得します．
+          </p>
+        </div>
+        <figure class="figure figure-fixed">
+          <img
+            src="images/NMR.gif"
+            alt="NMR法の概念図．"
+            class="research-image"
+        >
+          <figcaption>
+            <strong>NMR法の概念図．</strong>NMRとMRIは，同じ原理にもとづいています．どちらも原子の磁場中での回転を観測しています．
+          </figcaption>
+        </figure>
+
+      </div>
+      <div class="outcome"><strong>得られる情報：</strong> 水溶液中や細胞の中にある生体分子の構造・動き・相互作用を原子分解能で観察することができます．</div>
+
+    </section>
+
+    <section id="saxs" class="research-section">
+      <span class="section-label">METHOD 02</span>
+      <h2>Small-Angle X-ray Scattering (SAXS)</h2>
+      <p class="section-lead"><h3>小角X線散乱法の特徴と当研究室での活用</h3></p>
+      <div class="two-column">
+
+        <figure class="figure figure-fixed">
+          <img
+            src="images/SAXS.png"
+            alt="SAXS"
+            class="research-image"
+          >
+        
+          <figcaption>
+            <strong>SAXSと，X線結晶構造解析，NMRの比較．</strong>
+          </figcaption>
+        </figure>
+
+        <div class="copy">
+          <p><strong>小角X線散乱法（SAXS：Small-Angle X-ray Scattering）</strong>は，溶液中の生体分子にX線を照射し，そのX線の散乱を測定することで，分子の大きさや形状を調べる方法です．X線を用いた構造解析法としては，X線結晶構造解析がよく知られています．この方法では，分子を結晶化することで原子レベルの立体構造の情報が得られます．一方，結晶という特殊な環境での分子を測定するため，得られた構造情報が溶液中や生体内の分子の姿をどこまで反映しているのか，慎重に考える必要があります．SAXSでは，分子を結晶化せず，水溶液中に溶かした状態で測定できます．原子レベルの細かな情報は得られませんが，分子全体の大まかな形状などを捉えることができます．また，柔軟に動くタンパク質の構造分布を調べる際にも役立ちます．私たちは，<strong>「生理的条件に近い環境で，生体分子がどのように振る舞うのかを調べる」</strong>ことを大切な目標としています．NMRは原子ごとの詳細な情報を得ることに優れ，SAXSは分子全体の大きさや形を捉えることを得意とします．そこで，NMRを中心とした解析にSAXSを組み合わせ，局所構造から分子全体の姿までを理解することを目指しています．
+            </p>
+        </div>
+      </div>
+      <div class="outcome"><strong>得られる情報：</strong> 水溶液中での分子の大まかな形状を調べることができます．</div>
+    </section>
+
+    <section id="md" class="research-section">
+      <span class="section-label">METHOD 03</span>
+      <h2>Molecular Dynamics (MD) Simulation</h2>
+      <p class="section-lead"><h3>分子動力学計算の特徴と当研究室での活用</h3></p>
+      <div class="two-column">
+        <div class="copy">
+          <!--<h3>NMR</h3>-->
+          <p>分子動力学計算（<strong>MD</strong>：Molecular Dynamics Simulation）は，コンピューター上で生体分子を構成する原子の動きを計算し，分子が時間とともにどのように形を変えるのかを調べる手法です．実際の原子は原子核と電子からできていますが，MDシミュレーションでは，それぞれの電子状態は直接計算せず，原子を重さや電荷をもつ球体として扱います．また，共有結合でつながった原子間の伸び縮みなどは，主にバネに似た簡単な式で表します．このような近似によって計算量を抑え，膨大な数の原子からなるタンパク質や核酸の動きをシミュレーションすることができます．単純化されたモデルではありますが，最近の計算技術の進歩により，MDシミュレーションは生体分子の構造や運動を調べるための強力な手法として広く利用されています．私たちの研究室では，実験だけでは直接捉えにくい分子の動きや構造を詳しく調べるために，MDシミュレーションを活用しています．特に，NMRなどの実験データと一致するようにあえて分子モデルを調整することで，実験情報を補い，生体分子の動的な姿をより詳しく可視化することを目指しています．</p>
+
+          </p>
+        </div>
+        <figure class="figure figure-fixed">
+          <img
+            src="images/MD.png"
+            alt="MD法の概念図．"
+            class="research-image"
+        >
+          <figcaption>
+            <strong>MD法の概念と活用の例．</strong>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="outcome"><strong>得られる情報：</strong>分子の形や動きをコンピュータの画面で視覚的なアニメーションとして見ることができるため，分子をより直観的に捉えることができます．実験では見ることのできない非常に短い時間の動きや細かな原子の振る舞いを知ることができます．</div>
+    </section>
+
+    <section id="mldl" class="research-section">
+      <span class="section-label">METHOD 04</span>
+      <h2>機械学習(ML)・深層学習(DL)</h2>
+      <p class="section-lead"></p>
+      <div class="two-column">
+        <figure class="figure">
+          <img
+            src="images/DL.png"
+            alt="NMR法の概念図．"
+            class="research-image"
+        >
+          <figcaption>
+            <strong>機械学習の概念図．</strong>
+          </figcaption>
+        </figure>
+        <div class="copy">
+          <h3>機械学習(ML)の活用</h3>
+          <p>人工知能（<strong>AI</strong>：Artificial Intelligence）は，私たちの暮らしや社会に大きな変化をもたらし，さまざまな作業の自動化や効率化に利用されています．生命科学の分野でもAIの活用は急速に進んでおり，私たちの研究室でも，生体分子の構造や動きを解析するためにAI技術を取り入れています．AIを支える技術の一つが，コンピューターに多くのデータを学習させ，その中に潜む特徴や規則性を見つけ出す機械学習です．機械学習にはさまざまな手法がありますが，代表的なものに，生物の神経細胞のつながりを参考にした数理モデルであるニューラルネットワークがあります．このネットワークを多層化し，複雑な特徴を学習できるようにした手法を深層学習（<strong>DL</strong>：Deep Learning）と呼びます．私たちは，こうした機械学習や深層学習の技術を用いて，NMR信号の再構成やスペクトル解析，NMR・SAXSなどから得られる実験データに基づく分子構造の解析に取り組んでいます．実験とAIを組み合わせることで，従来の方法だけでは捉えにくかった生体分子の構造や動きを，より詳しく明らかにすることを目指しています．</p>
+        </div>
+      </div>
+      <div class="outcome"><strong>得られる情報：</strong> 実験データをコンピューターに学習させておくことで，測定データの品質改善やデータに潜む規則性を見つけ出すことができます．</div>
+    </section>
+
+    
+    <aside class="edit-note"><strong>更新日：2026/09/12</strong>　　Revision 2026/09/12 Teppei Ikeya</aside>
+    
+  </main>
+
+  <footer><p>© 2026 Biophysical Chemistry Laboratory</p></footer>
+</body>
+</html>
