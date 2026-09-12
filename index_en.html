@@ -57,6 +57,8 @@
     .research-figure img { display: block; width: 100%; height: auto; border-radius: 12px; }
     .member-link { text-decoration: none; color: inherit; display: block; }
     .member-link:hover { opacity: .8; }
+    .justify-text { text-align: justify; hyphens: auto; }
+
     footer { background: #1e3c72; color: white; text-align: center; padding: 30px 20px; margin-top: 60px; }
     @media (max-width: 768px) {
       header h1 { font-size: 2.2rem; }
@@ -115,12 +117,21 @@
 
   <section id="research">
     <div class="section-box">
-      <h3><a href="research_en.html" target="_blank">Research</a></h3>
+      <h3><a href="research_en.html">Research</a> · <a href="methods_en.html">Methods</a></h3>
+      <p class="justify-text">At the Biophysical Chemistry Laboratory, we investigate the structures, functions, and interactions of biological macromolecules, particularly proteins, using physicochemical approaches such as NMR spectroscopy, computational chemistry, machine learning, and small-angle X-ray scattering. Our goal is to deepen our understanding of biological phenomena and apply our findings to areas including drug discovery.</p>
       <div class="research-overview">
         <div class="research-copy">
-          <p>At the Biophysical Chemistry Laboratory, we investigate the structures, functions, and interactions of biological macromolecules, particularly proteins, using physicochemical approaches such as NMR spectroscopy, computational chemistry, machine learning, and small-angle X-ray scattering. Our goal is to deepen our understanding of biological phenomena and apply our findings to areas including drug discovery.</p>
-          <p><strong>Main research topics:</strong></p>
-          <ul class="research-themes">
+          <!-- Main analytical methods -->
+          <p><strong>Main Analytical Methods:</strong></p>
+          <ul class="research-themes" aria-label="Main analytical methods">
+            <li><a href="methods_en.html#nmr">Nuclear Magnetic Resonance (NMR) Spectroscopy</a></li>
+            <li><a href="methods_en.html#saxs">Small-Angle X-ray Scattering (SAXS)</a></li>
+            <li><a href="methods_en.html#md">Molecular Dynamics (MD) Simulation</a></li>
+            <li><a href="methods_en.html#mldl">Machine Learning (ML) and Deep Learning (DL)</a></li>
+          </ul>
+          <p><br></p>
+          <p><strong>Main Research Topics:</strong></p>
+          <ul class="research-themes" aria-label="Main research topics">
             <li><a href="research_en.html#structure">Protein Structure and Dynamics</a></li>
             <li><a href="research_en.html#interaction">Biomolecular Interactions</a></li>
             <li><a href="research_en.html#method">Development of NMR Measurement and Analysis Methods</a></li>
