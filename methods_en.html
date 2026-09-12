@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Methods used by the Biophysical Chemistry Laboratory to study biomolecular structure and dynamics, including NMR, SAXS, molecular dynamics, and machine learning.">
+  <title>Methods | Biophysical Chemistry Laboratory</title>
+  <link rel="icon" href="images/logo.jpg" type="image/jpg">
+  <link rel="stylesheet" href="research.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">BIOPHYSICAL CHEMISTRY LABORATORY</p>
+      <h1>Methods</h1>
+      <p class="lead">Biological macromolecules such as proteins, DNA, and RNA exist on the nanometer scale—about one billionth of a meter—and move over extremely short timescales ranging from nanoseconds (one billionth of a second) to milliseconds (one thousandth of a second). Specialized instruments and analytical methods are therefore required to capture their shapes and rapid fluctuations accurately.
+
+      </p>
+      <a class="top-link" href="index_en.html">← Back to the laboratory home page</a>
+    </div>
+  </header>
+
+  <nav class="topic-nav" aria-label="Methods">
+    <ul>
+      <li><a href="#nmr">Nuclear Magnetic Resonance (NMR)</a></li>
+      <li><a href="#saxs">Small-Angle X-ray Scattering (SAXS)</a></li>
+      <li><a href="#md">Molecular Dynamics (MD)</a></li>
+      <li><a href="#mldl">Machine Learning (ML) and Deep Learning (DL)</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="intro-grid">
+      <div class="intro-card">
+        <h2><strong>Visualizing</strong> Biomolecular Shape and Motion through Physicochemical Methods</h2>
+        <p>We apply high magnetic fields, X-rays, molecular simulations, and machine learning to biomolecular structure analysis. This page introduces the basic concepts of these methods and how we use them in our laboratory.</p>
+        <div class="keyword-list"><span>Solution NMR</span><span>In-cell NMR</span><span>SAXS</span><span>MD simulation</span><span>Artificial intelligence (AI/ML)</span></div>
+      </div>
+      <figure class="figure">
+        <svg viewBox="0 0 430 250" role="img" aria-label="Integrated research approach">
+          <defs><marker id="arr0" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#7992af"/></marker></defs>
+          <circle cx="215" cy="125" r="54" fill="#173765"/><text x="215" y="116" fill="white" text-anchor="middle" font-size="16" font-weight="bold">Molecular Function</text><text x="215" y="141" fill="white" text-anchor="middle" font-size="13">Dynamic View</text>
+          <g font-size="13" font-weight="bold" text-anchor="middle"><rect x="18" y="25" width="120" height="45" rx="12" fill="#dceafa"/><text x="78" y="53" fill="#173765">NMR Measurement</text><rect x="292" y="25" width="120" height="45" rx="12" fill="#dff3ed"/><text x="352" y="53" fill="#245b49">Structure &amp; Dynamics</text><rect x="18" y="180" width="120" height="45" rx="12" fill="#fff0dc"/><text x="78" y="208" fill="#7c4a13">Interactions</text><rect x="292" y="180" width="120" height="45" rx="12" fill="#e8e2f6"/><text x="352" y="208" fill="#513d7b">Computational Science</text></g>
+          <g stroke="#7992af" stroke-width="2" fill="none" marker-end="url(#arr0)"><path d="M137 57 Q185 55 186 78"/><path d="M292 57 Q245 55 244 78"/><path d="M137 194 Q180 190 188 170"/><path d="M292 194 Q248 190 242 170"/></g>
+        </svg>
+        <figcaption>By integrating experiments and computation, we visualize structures, motions, and interactions to understand the diverse functions of biomolecules.</figcaption>
+      </figure>
+    </div>
+
+    <section id="nmr" class="research-section">
+      <span class="section-label">METHOD 01</span>
+      <h2>Nuclear Magnetic Resonance (NMR) Spectroscopy</h2>
+      <p class="section-lead"><h3>Basic Principles of NMR</h3></p>
+      <div class="two-column">
+        <div class="copy">
+          <!--<h3>NMR</h3>-->
+          <p><strong>Nuclear magnetic resonance (NMR) spectroscopy</strong> is a method for observing biomolecular structure, motion, and interactions at atomic resolution. Biomolecules contain atoms such as hydrogen (<sup>1</sup>H), carbon (<sup>13</sup>C), nitrogen (<sup>15</sup>N), and phosphorus (<sup>31</sup>P), whose nuclei have weak magnetic properties. An NMR instrument uses a large superconducting magnet to generate a powerful magnetic field. When molecules are placed in this field, their atomic nuclei behave like tiny bar magnets with north and south poles <strong>(Figure 1)</strong>. Observing this magnetic behavior provides atomic-level information about molecular structure, motion, and intermolecular interactions. <strong>Magnetic resonance imaging (MRI)</strong>, widely used to create cross-sectional images of the human body, operates on the same fundamental principle. MRI maps the distribution of water molecules, whereas NMR spectroscopy measures organic and biological molecules to obtain information about the positions and motions of their atoms.
+          </p>
+        </div>
+        <figure class="figure figure-fixed">
+          <img
+            src="images/NMR.gif"
+            alt="Conceptual illustration of NMR spectroscopy"
+            class="research-image"
+        >
+          <figcaption>
+            <strong>Figure 1. Basic principle of NMR.</strong> NMR and MRI are based on the same physical principle: both observe the magnetic behavior of atomic nuclei in a magnetic field.
+          </figcaption>
+        </figure>
+
+      </div>
+      <p class="section-lead"><h3>In-cell NMR</h3></p>
+      <div class="two-column">
+        <div class="copy">
+          <!--<h3>NMR</h3>-->
+          <p>
+            In-cell NMR is one of the very few methods that can observe the structures, motions, and interactions of biomolecules in <strong>living</strong> cells at residue or atomic resolution. The cellular interior is densely packed with enormous numbers of biomolecules, creating a crowded environment known as <strong>molecular crowding</strong>. Observing biomolecules under these more physiological conditions, rather than only in a test tube, is essential for accurately understanding their structures and functions. In in-cell NMR, the protein or nucleic acid of interest is labeled with stable isotopes and either expressed inside the cell or introduced from outside. Because most other cellular molecules are unlabeled, signals from the target molecule can be observed selectively. Long measurements of living cells can be complicated by nutrient depletion, pH changes, and loss of cellular activity. We therefore use a <strong>bioreactor</strong> that continuously supplies fresh culture medium. Ligands or drugs can also be added to the incoming medium, allowing us to examine—while the cells remain alive—how external stimuli alter the target protein's structure, motion, and interactions.
+          </p>
+        </div>
+        <figure class="figure figure-fixed">
+          <img
+            src="images/incellnmr.jpg"
+            alt="Conceptual illustration of in-cell NMR"
+            class="research-image"
+        >
+          <figcaption>
+            <strong>Figure 2. Conceptual illustration of in-cell NMR.</strong>
+          </figcaption>
+        </figure>
+
+      </div>
+      
+      <div class="outcome"><strong>Information obtained:</strong> Biomolecular structures, motions, and interactions can be observed at atomic resolution in aqueous solution and inside living cells.</div>
+
+    </section>
+
+    <section id="saxs" class="research-section">
+      <span class="section-label">METHOD 02</span>
+      <h2>Small-Angle X-ray Scattering (SAXS)</h2>
+      <p class="section-lead"><h3>Features of SAXS and Its Use in Our Laboratory</h3></p>
+      <div class="two-column">
+
+        <figure class="figure figure-fixed">
+          <img
+            src="images/SAXS.png"
+            alt="SAXS"
+            class="research-image"
+          >
+        
+          <figcaption>
+            <strong>Figure 3. Comparison of SAXS, X-ray crystallography, and NMR.</strong>
+          </figcaption>
+        </figure>
+
+        <div class="copy">
+          <p><strong>Small-angle X-ray scattering (SAXS)</strong> examines molecular size and shape by illuminating biomolecules in solution with X-rays and measuring the scattered radiation. X-ray crystallography is a well-known structural method that can provide atomic-level three-dimensional structures after a molecule has been crystallized. Because crystals are a specialized environment, however, care is needed when considering how closely the resulting structures represent molecules in solution or in cells. SAXS requires no crystallization and observes molecules dissolved in aqueous solution. Although it does not provide detailed atomic-resolution information, it reveals the overall size and shape of a molecule and is useful for examining conformational distributions of flexible proteins. An important goal of our laboratory is to <strong>understand how biomolecules behave under conditions close to those in living systems</strong>. NMR excels at local, atom-specific information, whereas SAXS captures global molecular size and shape. We combine SAXS with NMR-centered analysis to understand biomolecules from local structure to overall architecture.
+            </p>
+        </div>
+      </div>
+      <div class="outcome"><strong>Information obtained:</strong> The overall shape of molecules in aqueous solution can be characterized.</div>
+    </section>
+
+    <section id="md" class="research-section">
+      <span class="section-label">METHOD 03</span>
+      <h2>Molecular Dynamics (MD) Simulation</h2>
+      <p class="section-lead"><h3>Features of MD Simulation and Its Use in Our Laboratory</h3></p>
+      <div class="two-column">
+        <div class="copy">
+          <!--<h3>NMR</h3>-->
+          <p><strong>Molecular dynamics (MD) simulation</strong> calculates the motion of the atoms that make up a biomolecule and examines how its shape changes over time. Real atoms contain nuclei and electrons, but conventional MD does not calculate each electronic state directly. Instead, atoms are treated as spheres with mass and charge, while the stretching and bending of covalent bonds are described mainly by simple spring-like equations. These approximations reduce computational cost and make it possible to simulate proteins and nucleic acids containing enormous numbers of atoms. Although the model is simplified, advances in computational technology have made MD a powerful and widely used method for studying biomolecular structure and motion. In our laboratory, we use MD simulations to investigate molecular motions and structures that are difficult to capture directly by experiment. In particular, we adjust molecular models so that calculated properties agree with experimental data such as NMR measurements, thereby complementing the experiments and providing a more detailed visualization of dynamic biomolecular behavior.</p>
+
+          </p>
+        </div>
+        <figure class="figure figure-fixed">
+          <img
+            src="images/MD.png"
+            alt="Conceptual illustration of molecular dynamics simulation"
+            class="research-image"
+        >
+          <figcaption>
+            <strong>Figure 4. Basic concept and application of MD simulation.</strong>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="outcome"><strong>Information obtained:</strong> Molecular shapes and motions can be visualized as animations, providing an intuitive picture of molecules. MD also reveals ultrafast motions and detailed atomic behavior that are difficult to observe experimentally.</div>
+    </section>
+
+    <section id="mldl" class="research-section">
+      <span class="section-label">METHOD 04</span>
+      <h2>Machine Learning (ML) and Deep Learning (DL)</h2>
+      <p class="section-lead"></p>
+      <div class="two-column">
+        <figure class="figure">
+          <img
+            src="images/DL.png"
+            alt="Conceptual illustration of machine learning"
+            class="research-image"
+        >
+          <figcaption>
+            <strong>Figure 5. Conceptual illustration of machine learning.</strong>
+          </figcaption>
+        </figure>
+        <div class="copy">
+          <h3>Applications of Machine Learning</h3>
+          <p><strong>Artificial intelligence (AI)</strong> has brought major changes to our lives and society and is used to automate and streamline a wide range of tasks. Its use is also rapidly expanding in the life sciences, and our laboratory applies AI technologies to the analysis of biomolecular structure and motion. One of the key technologies underlying AI is machine learning, in which computers learn from large datasets to identify hidden features and patterns. Machine learning includes many approaches; one representative example is the neural network, a mathematical model inspired by networks of biological neurons. Neural networks with many layers that can learn complex features are known as <strong>deep learning (DL)</strong>. We use machine learning and deep learning for NMR signal reconstruction, spectral analysis, and molecular structure analysis based on experimental data from NMR and SAXS. By combining experiments with AI, we aim to reveal biomolecular structures and motions in greater detail than is possible using conventional methods alone.</p>
+        </div>
+      </div>
+      <div class="outcome"><strong>Information obtained:</strong> By training computers on experimental data, we can improve measurement quality and identify patterns hidden within the data.</div>
+    </section>
+
+    
+    <aside class="edit-note"><strong>Last updated: 2026/09/12</strong> &nbsp;&nbsp; Revision: Teppei Ikeya</aside>
+    
+  </main>
+
+  <footer><p>© 2026 Biophysical Chemistry Laboratory</p></footer>
+</body>
+</html>
